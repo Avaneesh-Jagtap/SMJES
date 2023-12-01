@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat";
+  color: white;
+}
+
+html,body {
+  height: 100%;
+  perspective: 800px;
+  width: 100%;
+}
+#cursor {
+  height: 20px;
+  width: 20px;
+  background-color: #95c11e;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  transition: all linear 0.1s;
+}
+#cursor-blur {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(150, 193, 30, 0.3);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(80px);
+  z-index: 9;
+  transition: all linear 0.4s;
+}
+#nav{
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 150px;
+  gap: 50px ;
+  position: fixed;
+  justify-content: flex-start;
+  z-index: 99;
+}
+#nav img{
+  height: 80px;
+  width: 85px;
+  text-align: left;
+}
+#nav h4{
+  font-size: 15px;
+  font-weight: 500;
+  width: 70%;
+}
+img{
+  height: 130%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+#main{
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.4)
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+  
+}
+#page1 h1{
+  font-size: 65px;
+  font-weight: 900;
+  position: relative;
+}
+#page1 h1::before {
+  content: "SHRI MAHAVIR JAIN ENGLISH SCHOOL";
+  position: absolute;
+  color: #000;
+  top: -2px;
+  left: -2px;
+  -webkit-text-stroke: 1px red;
+  z-index: -1;
+}
+#page1 h2{
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#page1 h5{
+  font-size: 15px;
+  font-weight: 500;
+  width: 70%;
+}
+#page1 #arrow {
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  border: 2px solid #95c11e;
+  position: absolute;
+  display: flex;
+  left: -5%;
+  bottom: -10%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all ease 0.5s;
+} 
+#page1 #arrow i{
+  font-size: 50px;
+  font-weight: 100;
+}
+#page1 #arrow:hover{
+  scale: 0.4;
+  background-color: #95c11e;
+}
+
+html {
+  font-size: 40px;
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+  background-color: #000;
+}
+
+#about-us {
+  height: 40vh;
+  width: 100%;
+  margin-top: 30vh;
+  display: flex;
+  padding: 0 50px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  justify-content: space-around;
+  
+}
+ 
+#about-us-in {
+  width: 67%;
+  text-align: center;
+}
+#about-us-in h3 {
+  font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  
+}
+#about-us-in p {
+  font-size: 30px;
+  line-height: 26px;
+}
+
+#cards-container{
+  margin-top: 10vh;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px ;
+  position: relative;
+  z-index: 10;
+}
+.cards{
+  height: 80%;
+  width: 24%;
+  background-color: blue;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+#card1{
+  background-image:url(https://previews.123rf.com/images/artursz/artursz1909/artursz190930126/130561085-text-sign-showing-aim-high-business-photo-text-go-for-best-job-school-or-activity-asking-someone-to.jpg) ;
+}
+#card2{
+  background-image:url(https://s39613.pcdn.co/wp-content/uploads/2014/04/teacher-with-college-students-giving-lesson-in-classroom-picture-id510617367.jpg) ;
+}
+#card3{
+  background-image:url(https://static.vecteezy.com/system/resources/previews/025/395/165/original/admission-open-text-banner-for-social-media-banner-design-admission-post-banner-back-to-school-admission-open-announcement-isolated-on-white-background-vector.jpg) ;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding: 30px;
+  padding-top: 30px;
+  opacity: 0;
+  transition: all ease 0.6s;
+}
+.overlay h4{
+  color: #000;
+  font-size: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom:20px  ;
+  font-weight:800 ;
+}
+.overlay p{
+  color: #000;
+  font-size: 18px;
+}
+.cards:hover .overlay{
+  opacity: 1;
+}
+.cards:hover{
+  transform: rotate3d(-1,1,0,20deg);
+}
+#green-div {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  background: linear-gradient(to left bottom, #db2626, #ace022);
+  margin-top: 30vh;
+}
+#green-div h4 {
+  width: 45%;
+  line-height: 50px;
+  color: #000;
+  text-align: left;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#green-div img {
+  height: 100%;
+  object-fit: cover;
+  width: 14%;
+}
+#green-div h3 {
+  width: 45%;
+  line-height: 50px;
+  margin-right: 40vh;
+  color: #000;
+  text-align: left;
+  margin-bottom: 9vh;
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.my-button {
+  width: 50vh;
+  height: 20vh;
+  background-color: #95c11e;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 6em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em; /* Optional: Adjust font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 82vh;
+  
+}
