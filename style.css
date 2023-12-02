@@ -197,7 +197,8 @@ html {
 .overlay{
   height: 100%;
   width: 100%;
-  background-color: #95c11e;
+  background-color: #96c11ede;
+  backdrop-filter: blur(5px);
   padding: 30px;
   padding-top: 30px;
   opacity: 0;
@@ -222,42 +223,20 @@ html {
   transform: rotate3d(-1,1,0,20deg);
 }
 #green-div {
-  height: 50vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* background-color: red; */
-  background: linear-gradient(to left bottom, #db2626, #ace022);
+  background: linear-gradient(to left bottom,#587210,#96c11ee8,#bbe44b );
   margin-top: 30vh;
 }
-#green-div h4 {
-  width: 45%;
-  line-height: 50px;
-  color: #000;
-  text-align: left;
-  font-weight: 800;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-#green-div img {
-  height: 100%;
-  object-fit: cover;
-  width: 14%;
-}
-#green-div h3 {
-  width: 45%;
-  line-height: 50px;
-  margin-right: 40vh;
-  color: #000;
-  text-align: left;
-  margin-bottom: 9vh;
-  font-weight: 800;
-  font-size: 20px;
-  text-transform: uppercase;
-}
+
+
+
 .my-button {
   width: 50vh;
-  height: 20vh;
+  height: 30vh;
   background-color: #95c11e;
   color: #fff;
   text-align: center;
@@ -272,6 +251,97 @@ html {
   border-radius: 5px;
   cursor: pointer;
   align-items: center;
-  margin-left: 82vh;
+  margin-left: 89vh;
+  box-shadow: 30px 30px 60px rgba(110, 105, 105, 0.274),inset -20px -20px 60px rgba(0, 0, 0, 0.836);
+}
+   #green-div h5 {
+    width: 100%;
+    line-height: 0;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    margin-left: 10px;
+  }
+  #green-div h6 {
+    width: 100%;
+    line-height: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 90px;
+    margin-bottom: 170px;
+  }
+  #green-div h4 {
+    width: 100%;
+    line-height: 12px;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 90px;
+  }
+
+
+  #green-div u {
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 800;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 7vh;
+    margin-left: 10px;
+    margin-right: 90px;
+  }
+
+#contact1{
+   width: 190vh;
+   height: 50vh;
+   background-color: #bbe44b;
+   margin-left: 20vh;
+}
+
+
+
+#contact2{
+  width: 200vh;
+  height: 50vh;
+  background-color: #95c11e;
+  
+}
+#contact3{
+  width: 200vh;
+  height: 50vh;
+  background-color: #587210;
+  margin-right: 20vh;
+}
+#map {
+  text-align: center;
+
+  height: 60vh;
+  display: flex;
+  
+  align-items: center;
+  
+  /* background-color: red; */
+  background: linear-gradient(to left bottom,#587210,#96c11ee8,#bbe44b );
+  
+  
+}
+#map h1{
+  font-size: 90px;
+  
+  margin-left: 60vh;
   
 }
